@@ -4,18 +4,18 @@
   <img src="icon.png" width="150" alt="CLAD Organizer icon" />
 </p>
 
-CLAD Organizer turns a real-world request into a clear spatial checklist, then guides the user through the physical items needed to complete it. It is designed for SPECS and built with CLAD in Lens Studio.
+CLAD Organizer turns a real-world request into a clear spatial checklist, then guides the user through the physical items needed to complete it. It is designed for SPECS in Lens Studio.
 
 ## Demo
 
 <p align="center">
-  <video
-    src="media/CLAD_Organizer_Demo.mp4"
-    poster="media/screenshots/final-qa-market.jpg"
-    controls
-    playsinline
-    width="360">
-  </video>
+  <a href="media/CLAD_Organizer_Demo.mp4">
+    <img src="media/CLAD_Organizer_Demo_Preview.gif" width="360" alt="CLAD Organizer demo preview" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="media/CLAD_Organizer_Demo.mp4">Watch the full 53-second demo</a>
 </p>
 
 The demo follows a dinner-planning flow: create a plan, identify what is already available, enter CLAD Market, collect what remains, and finish with one synchronized completion state.
@@ -34,9 +34,11 @@ The demo follows a dinner-planning flow: create a plan, identify what is already
 | --- | --- | --- |
 | ![Planning checklist](media/screenshots/final-qa-planning.jpg) | ![CLAD Market](media/screenshots/final-qa-market.jpg) | ![Completion state](media/screenshots/final-qa-completion.jpg) |
 
-| Voxel market | Checklist stays in sync |
-| --- | --- |
-| ![Mini market](media/screenshots/mini-market-storefront-wide.jpg) | ![Collection updates the checklist](media/screenshots/milestone-4-collection-linked-checklist.jpg) |
+### Lens Studio pickup sequence
+
+| Before pickup | Yogurt collected | Next item highlighted |
+| --- | --- | --- |
+| ![CLAD Market with six items remaining](media/screenshots/lens-studio-market-before.png) | ![Yogurt collected and removed from the checklist](media/screenshots/lens-studio-yogurt-pickup.png) | ![The next market item highlighted in Lens Studio](media/screenshots/lens-studio-market-after.png) |
 
 ## Run locally
 
@@ -54,6 +56,7 @@ Assets/
   Scene.scene              Lens Studio scene
 media/
   CLAD_Organizer_Demo.mp4  Vertical product film
+  CLAD_Organizer_Demo_Preview.gif
   screenshots/             Product and interaction captures
 PROMPT_LOG.md              Development prompt history
 ```
@@ -61,3 +64,6 @@ PROMPT_LOG.md              Development prompt history
 ## Credits
 
 Created by Jayasri Guthula.
+
+- Product built with CLAD and Codex in Lens Studio for SPECS.
+- Cinematic sequences created using Cantina; real product footage captured in Lens Studio.
