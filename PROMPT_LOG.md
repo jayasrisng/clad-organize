@@ -646,3 +646,14 @@ After implementation:
 
 **Validation/result:** Compile and fresh runtime logs passed. Yogurt collection still updates the authoritative checklist, and a wide Market screenshot was saved.
 
+## 15. Organizer request input
+
+**Original prompt**
+
+```text
+It asks what I want, then I should be able to text or use mic to tell what I want. Based on that, the checklist is prepared. If I say host dinner for 4, it should say plates, spoons, napkins, entrée, dessert, drinks, and so on.
+```
+
+**What CLAD/Codex did:** Added typed input through the SPECS text-input system and voice transcription through the SPECS ASR module. Both paths submit to the same controller, which creates the planner state used by the checklist and CLAD Market.
+
+**Validation/result:** `Host dinner for 4` prepares a six-item hosting checklist; chicken-biryani requests preserve the original eight-item ingredient workflow. The current planner uses explicit local intent matching for those demonstrated paths; fully open-ended LLM planning remains a future Remote Service Gateway enhancement.

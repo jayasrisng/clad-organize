@@ -63,10 +63,11 @@ export class CladChecklistUI extends BaseScriptComponent {
 
   private render(): void {
     const phase = this.controller.getCurrentPhase()
+    const isBrief = phase === "brief"
     const isMarket = phase === "market"
     const isComplete = phase === "complete"
     this.panelWidth = isComplete ? COMPLETE_PANEL_WIDTH_CM : isMarket ? MARKET_PANEL_WIDTH_CM : PANEL_WIDTH_CM
-    this.panelHeight = isComplete ? COMPLETE_PANEL_HEIGHT_CM : isMarket ? MARKET_PANEL_HEIGHT_CM : PANEL_HEIGHT_CM
+    this.panelHeight = isComplete ? COMPLETE_PANEL_HEIGHT_CM : isMarket ? MARKET_PANEL_HEIGHT_CM : isBrief ? 31 : PANEL_HEIGHT_CM
     this.panelPadding = isMarket ? MARKET_PANEL_PADDING_CM : PANEL_PADDING_CM
     this.rowHeight = isMarket ? MARKET_ROW_HEIGHT_CM : ROW_HEIGHT_CM
     this.plate!.size = new vec2(this.panelWidth, this.panelHeight)
@@ -95,7 +96,9 @@ export class CladChecklistUI extends BaseScriptComponent {
       list.paddingLeft = this.panelPadding
       list.paddingRight = this.panelPadding
 
-      if (phase === "planning") {
+      if (phase === "brief") {
+        this.renderBrief(this.content!)
+      } else if (phase === "planning") {
         this.renderPlanning(this.content!)
       } else if (phase === "market") {
         this.renderMarket(this.content!)
@@ -105,10 +108,19 @@ export class CladChecklistUI extends BaseScriptComponent {
     })
   }
 
+  private renderBrief(parent: SceneObject): void {
+    this.addTextRow(parent, "CLAD Organizer", "Title", 4.4)
+    this.addTextRow(parent, "What do you want to organize?", "Subtitle", 2.4)
+    this.addTextRow(parent, this.controller.getPromptStatus(), "Body", 3.3)
+    this.addTextRow(parent, "Try: “Host dinner for 4”", "Progress", 2.4)
+    this.addActionButton(parent, "Type your plan", () => this.controller.openTextPlanner())
+    this.addActionButton(parent, "Speak your plan", () => this.controller.startVoicePlanner())
+  }
+
   private renderPlanning(parent: SceneObject): void {
-    this.addTextRow(parent, "Biryani for 4", "Title", 4.3)
-    this.addTextRow(parent, "Tomorrow", "Subtitle", 2.0)
-    this.addTextRow(parent, `${this.controller.getReadyCount()} / 8 ready`, "Progress", 2.4)
+    this.addTextRow(parent, this.controller.getPlanTitle(), "Title", 4.3)
+    this.addTextRow(parent, this.controller.getPlanSubtitle(), "Subtitle", 2.0)
+    this.addTextRow(parent, `${this.controller.getReadyCount()} / ${this.controller.getTotalCount()} ready`, "Progress", 2.4)
 
     this.controller.getIngredients().forEach((ingredient) => {
       this.addIngredientRow(parent, ingredient)
@@ -135,8 +147,8 @@ export class CladChecklistUI extends BaseScriptComponent {
   private renderComplete(parent: SceneObject): void {
     this.addTextRow(parent, "✓  ✓  ✓", "Progress", 2.5)
     this.addTextRow(parent, "You're all set!", "Title", 4.5)
-    this.addTextRow(parent, "Biryani for 4", "Subtitle", 2.4)
-    this.addTextRow(parent, "8 / 8 ingredients ready", "Progress", 2.3)
+    this.addTextRow(parent, this.controller.getPlanTitle(), "Subtitle", 2.4)
+    this.addTextRow(parent, `${this.controller.getTotalCount()} / ${this.controller.getTotalCount()} items ready`, "Progress", 2.3)
     this.addActionButton(parent, "Reset Demo", () => this.controller.reset())
   }
 
