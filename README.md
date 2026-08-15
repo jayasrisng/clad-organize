@@ -15,7 +15,7 @@ CLAD Organizer turns a real-world request into a clear spatial checklist, then g
 </p>
 
 <p align="center">
-  <a href="media/CLAD_Organizer_Demo.mp4">Watch the full 53-second demo</a>
+  <a href="media/CLAD_Organizer_Demo.mp4">Watch the full demo</a>
 </p>
 
 The demo follows a dinner-planning flow: create a plan, identify what is already available, enter CLAD Market, collect what remains, and finish with one synchronized completion state.
