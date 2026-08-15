@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/2479b9ea-00d5-4c27-92cc-446a42da25d2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a31f0acd-5696-4fc3-910a-5520462ec240
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a31f0acd-5696-4fc3-910a-5520462ec240
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1df38140-e6f5-4dbf-92e5-eb5bc1e82391
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1df38140-e6f5-4dbf-92e5-eb5bc1e82391>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 3060b48e-6d2a-4b30-8c97-91d52edcde87
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    controller: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 controller

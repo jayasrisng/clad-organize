@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/17b446a4-2f02-4b96-b3c1-dce6d485d0b0>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 1a08721f-7527-412a-80a1-b635b97941e2
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 1a08721f-7527-412a-80a1-b635b97941e2
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 5a062422-3b10-4c14-a8f5-a8681a28504e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/5a062422-3b10-4c14-a8f5-a8681a28504e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 3ae46c4c-caba-4360-b166-b3ac06687f33
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    controller: false
+    marketVisuals: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      marketVisuals: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 controller
+    - // @input SceneObject marketVisuals

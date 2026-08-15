@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/d7ce1bbd-0bcc-4e47-a69c-4b29fb064248>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f01660ab-fbcf-4893-8385-36c90ab31d00
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f01660ab-fbcf-4893-8385-36c90ab31d00
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 87ea03e8-2683-447d-af4a-47ac02f530d2
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/87ea03e8-2683-447d-af4a-47ac02f530d2>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: d1dc47c6-6fb6-4fd8-9e38-c9da072b12e9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    controller: false
+    ingredientId: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      ingredientId: onion
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 controller
+    - '// @input string ingredientId = "onion"'
