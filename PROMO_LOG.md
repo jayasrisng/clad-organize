@@ -56,3 +56,10 @@ This log records clean, non-sensitive demo evidence for later promotion. It does
 - Screenshots: `promo-assets/screenshots/final-qa-planning.jpg`, `promo-assets/screenshots/final-qa-market.jpg`, and `promo-assets/screenshots/final-qa-completion.jpg`
 - Demonstrates: the complete recording path from a clean 0 / 8 planning state, through the five-item Market state after three ingredients are marked owned, to the 8 / 8 completion moment.
 - Strong implementation moment: the same controller state survived planning → Market → Back and drove each remaining Market collection to the final completion state before Reset Demo restored the clean start.
+
+## Mini-Market Environment Pass
+
+- Screenshot: `promo-assets/screenshots/mini-market-storefront-wide.jpg`
+- Demonstrates: CLAD Market now reads as a compact voxel grocery storefront, with a front frame, floor/ceiling treatment, three multi-level stocked bays, category color coding, and a lightweight checkout basket.
+- Strong implementation moment: all added shelf decks, filler stock, architectural framing, and checkout props are visual-only. The eight authoritative ingredient products retain their original SIK roots, colliders, IDs, and shared controller links.
+- Strong demo interaction: select Yogurt from the Dairy bay; the authoritative cup disappears and **Still Needed** decreases immediately while the new filler stock preserves the full-shelf impression.
