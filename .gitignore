@@ -14,7 +14,6 @@ Workspaces/**
 /tsconfig.json
 .DS_Store
 /spk_debug_key.pem
-signing_key.pem
 *.lock
 
 # Shipped by Lens Studio
@@ -45,3 +44,4 @@ node_modules/
 # Environment / secrets
 .env
 .env.*
+signing_key.pem
