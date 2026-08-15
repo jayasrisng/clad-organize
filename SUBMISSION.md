@@ -31,7 +31,7 @@ CLAD Organizer turns a spoken or typed real-world request into a spatial checkli
 
 ## Video specification
 
-- File: `CLAD_Organizer_Final_9x16.mp4`
+- File: `media/CLAD_Organizer_Demo.mp4`
 - 1080 × 1920 vertical
 - 30 fps, H.264/AAC
-- Duration: 56.23 seconds
+- Duration: 53.00 seconds
