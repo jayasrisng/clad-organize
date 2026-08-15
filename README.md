@@ -8,7 +8,15 @@ CLAD Organizer turns a real-world request into a clear spatial checklist, then g
 
 ## Demo
 
-🎬 [Watch the vertical product demo](media/CLAD_Organizer_Demo.mp4)
+<p align="center">
+  <video
+    src="media/CLAD_Organizer_Demo.mp4"
+    poster="media/screenshots/final-qa-market.jpg"
+    controls
+    playsinline
+    width="360">
+  </video>
+</p>
 
 The demo follows a dinner-planning flow: create a plan, identify what is already available, enter CLAD Market, collect what remains, and finish with one synchronized completion state.
 
@@ -48,7 +56,6 @@ media/
   CLAD_Organizer_Demo.mp4  Vertical product film
   screenshots/             Product and interaction captures
 PROMPT_LOG.md              Development prompt history
-PROMO_LOG.md               Evidence notes for the media gallery
 ```
 
 ## Credits

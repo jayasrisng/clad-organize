@@ -16,7 +16,6 @@ CLAD Organizer turns a spoken or typed real-world request into a spatial checkli
 
 - **Demo video:** Add the public Google Drive, Dropbox, or WeTransfer URL here before submitting.
 - **CLAD prompt log:** [PROMPT_LOG.md](PROMPT_LOG.md)
-- **Promo evidence:** [PROMO_LOG.md](PROMO_LOG.md)
 
 ## Final pre-submit checks
 
